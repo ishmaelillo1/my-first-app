@@ -8,13 +8,15 @@ import {ServerComponent} from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component' ;
 import {SuccessAlertComponent} from './success-alert/success-alert.component';
+import { ClickDetailsComponent } from './click-details/click-details.component';
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServersComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    ClickDetailsComponent
   ],
   imports: [
     BrowserModule,

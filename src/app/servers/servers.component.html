@@ -6,4 +6,8 @@
 <app-server *ngFor = "let server of servers"> {{server}}
  </app-server>
  <hr>
- <button class="btn btn-primary"></button>
+ <button class="btn btn-primary" (click) = "onDisplayDetails()" >{{getButtonText()}}</button>
+ <p *ngIf = "detailsDisplayed"> Hello World! </p>
+ <p *ngFor="let btnClick of btnClicks" 
+ [ngStyle]="{backgroundColor: btnClick >=5 ? 'blue' : 'white'}" 
+ [ngClass]="{'white-Text' : btnClick >=5 }" > {{btnClick}} </p>
